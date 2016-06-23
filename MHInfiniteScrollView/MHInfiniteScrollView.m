@@ -98,7 +98,7 @@ static NSUInteger const MHMaxImageCount = 3;
         [imageView addGestureRecognizer:itemTap];
         
     }
- 
+    
     // 页码视图
     UIPageControl *pageControl = [[UIPageControl alloc] init];
     [self addSubview:pageControl];
@@ -167,7 +167,11 @@ static NSUInteger const MHMaxImageCount = 3;
         CGFloat distance = 0;
         if (self.isScrollDirectionPortrait) {
             distance = ABS(imageView.frame.origin.y - scrollView.contentOffset.y);
+            
+            
+            
         } else {
+            //NSLog(@"scrollView is [ %@ ] , imageView is [ %@ ] , imageView.frame.origin.x is [ %f ] , scrollView.contentOffset.x is [ %f ]" , NSStringFromCGRect(scrollView.frame) , NSStringFromCGRect(imageView.frame),imageView.frame.origin.x,scrollView.contentOffset.x);
             distance = ABS(imageView.frame.origin.x - scrollView.contentOffset.x);
         }
         if (distance < minDistance) {
@@ -232,7 +236,10 @@ static NSUInteger const MHMaxImageCount = 3;
     self.pageControl.numberOfPages = images.count;
     self.pageControl.currentPage = 0;
     self.pageControl.hidesForSinglePage = images.count<=1;
-
+    
+    //这里需要更新一下文本内容
+    [self reloadData];
+    
     // 停止定时器
     [self stopTimer];
     
@@ -273,7 +280,7 @@ static NSUInteger const MHMaxImageCount = 3;
         // 非无限循环滚动 刷新数据
         [self reloadLimitLoopData];
     }
-
+    
 }
 
 
@@ -421,7 +428,7 @@ static NSUInteger const MHMaxImageCount = 3;
 
 - (void)next
 {
- 
+    
     /** 核心思路
      *  自动滚动到下一页
      *  设置scrollView的contentOffset为2 * self.scrollView.frame.size.width 就是滚动到第三张imageview
@@ -457,7 +464,7 @@ static NSUInteger const MHMaxImageCount = 3;
                 
                 [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
             }
-
+            
         }
         
     } else {
@@ -468,7 +475,7 @@ static NSUInteger const MHMaxImageCount = 3;
             [self.scrollView setContentOffset:CGPointMake(2 * self.scrollView.frame.size.width, 0) animated:YES];
         }else{
             //非无限循环滚动
-
+            
             if (index < count-1)
             {
                 [self.scrollView setContentOffset:CGPointMake((index+1) * self.scrollView.frame.size.width, 0) animated:YES];

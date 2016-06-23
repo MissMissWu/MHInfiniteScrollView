@@ -20,7 +20,7 @@
 		1863ADF71D19381000AFFB91 /* img_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863ADF21D19381000AFFB91 /* img_03.png */; };
 		1863ADF81D19381000AFFB91 /* img_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 1863ADF31D19381000AFFB91 /* img_04.png */; };
 		1863ADFB1D1A88E100AFFB91 /* MHInfiniteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1863ADFA1D1A88E100AFFB91 /* MHInfiniteController.m */; };
-		188F73831D1B8B8E00B15F8F /* MHInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188F73821D1B8B8E00B15F8F /* MHInfiniteScrollView.m */; };
+		188F738A1D1B95C800B15F8F /* MHInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188F73891D1B95C800B15F8F /* MHInfiniteScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		1863ADF31D19381000AFFB91 /* img_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_04.png; sourceTree = "<group>"; };
 		1863ADF91D1A88E100AFFB91 /* MHInfiniteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHInfiniteController.h; sourceTree = "<group>"; };
 		1863ADFA1D1A88E100AFFB91 /* MHInfiniteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHInfiniteController.m; sourceTree = "<group>"; };
-		188F73811D1B8B8E00B15F8F /* MHInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHInfiniteScrollView.h; sourceTree = "<group>"; };
-		188F73821D1B8B8E00B15F8F /* MHInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHInfiniteScrollView.m; sourceTree = "<group>"; };
+		188F73881D1B95C800B15F8F /* MHInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHInfiniteScrollView.h; sourceTree = "<group>"; };
+		188F73891D1B95C800B15F8F /* MHInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHInfiniteScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		186311271D1936180071798C /* MHInfiniteScrollViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				188F73801D1B8B8E00B15F8F /* MHInfiniteScrollView */,
+				188F73841D1B91A700B15F8F /* MHInfiniteScrollView */,
 				1863ADED1D19380100AFFB91 /* Resource */,
 				1863112B1D1936180071798C /* AppDelegate.h */,
 				1863112C1D1936180071798C /* AppDelegate.m */,
@@ -151,11 +151,11 @@
 			path = Page;
 			sourceTree = "<group>";
 		};
-		188F73801D1B8B8E00B15F8F /* MHInfiniteScrollView */ = {
+		188F73841D1B91A700B15F8F /* MHInfiniteScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				188F73811D1B8B8E00B15F8F /* MHInfiniteScrollView.h */,
-				188F73821D1B8B8E00B15F8F /* MHInfiniteScrollView.m */,
+				188F73881D1B95C800B15F8F /* MHInfiniteScrollView.h */,
+				188F73891D1B95C800B15F8F /* MHInfiniteScrollView.m */,
 			);
 			name = MHInfiniteScrollView;
 			path = ../../MHInfiniteScrollView;
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				186311301D1936180071798C /* ViewController.m in Sources */,
-				188F73831D1B8B8E00B15F8F /* MHInfiniteScrollView.m in Sources */,
+				188F738A1D1B95C800B15F8F /* MHInfiniteScrollView.m in Sources */,
 				1863112D1D1936180071798C /* AppDelegate.m in Sources */,
 				1863ADFB1D1A88E100AFFB91 /* MHInfiniteController.m in Sources */,
 				1863112A1D1936180071798C /* main.m in Sources */,

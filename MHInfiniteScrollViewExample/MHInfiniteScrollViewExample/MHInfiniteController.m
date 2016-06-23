@@ -40,6 +40,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"无限循环";
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     MHInfiniteScrollView *scrollView = [[MHInfiniteScrollView alloc] init];
     scrollView.backgroundColor = [UIColor redColor];

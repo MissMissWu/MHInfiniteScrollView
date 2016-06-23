@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors      = {"CoderMikeHe" => "491273090@qq.com"}
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/CoderMikeHe/MHInfiniteScrollView.git", :tag => s.version }
-  s.source_files  = "MHInfiniteScrollView", "MHInfiniteScrollView/**/*.{h,m}"
+  s.source_files = "MHInfiniteScrollView", "MHInfiniteScrollView/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   s.requires_arc = true
 
